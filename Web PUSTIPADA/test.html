@@ -13,6 +13,12 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
+        <img
+          src="img/iconMenu.png"
+          alt="menu"
+          class="iconMenu"
+          onclick="bukaMenu()"
+        />
       </ul>
     </nav>
     <section id="home">
@@ -20,10 +26,37 @@
         <img src="img/gedungPerpustakaan.png" alt="Gedung Perpustakaan" />
         <div class="wrapper-selamatDatang">
           <h2>PUSTIPADA</h2>
-          <h3>Selamat</h3>
+          <p>Selamat Datang di Pusat Teknologi Informasi dan Pangkalan Data</p>
         </div>
       </div>
     </section>
     <section id="about"></section>
+
+    <menu id="menu">
+      <img
+        src="img/iconBack.png"
+        alt="back"
+        class="iconBackMenu"
+        onclick="tutupMenu()"
+      />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </menu>
+
+    <script>
+      function tutupMenu() {
+        let menu = document.getElementById("menu");
+
+        menu.style.display = "none";
+      }
+      function bukaMenu() {
+        let menu = document.getElementById("menu");
+
+        menu.style.display = "block";
+      }
+    </script>
   </body>
 </html>
