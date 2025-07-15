@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.logo {
+  max-height: 10vh;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 0 10px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.gambar-home {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.gambar-home img {
+  width: 100%;
+}
+.wrapper-selamatDatang {
+  position: absolute;
+  background-color: rgba(7, 140, 242, 0.25);
+  margin-right: 20px;
+  padding: 1rem;
+}
