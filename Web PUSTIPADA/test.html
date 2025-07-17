@@ -1,69 +1,90 @@
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Profil PUSTIPADA</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<nav>
-			<img class="logo" src="img/icon.png" alt="PUSTIPADA" />
-			<h2>PUSTIPADA</h2>
-			<ul class="menu">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-				<img
-					src="img/iconMenu.png"
-					alt="menu"
-					class="iconMenu"
-					onclick="bukaMenu()"
-				/>
-			</ul>
-		</nav>
-		<section id="home">
-			<div class="gambar-home">
-				<img
-					src="img/gedungPerpustakaan.png"
-					alt="Gedung Perpustakaan"
-				/>
-				<div class="wrapper-selamatDatang">
-					<h2>PUSTIPADA</h2>
-					<p>
-						Selamat Datang di Pusat Teknologi Informasi dan
-						Pangkalan Data
-					</p>
-				</div>
-			</div>
-		</section>
-		<section id="about"></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil PUSTIPADA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="img/icon.png" alt="PUSTIPADA" />
+      <h2>PUSTIPADA</h2>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Struktur Organisasi</a></li>
+        <li><a href="#">Contact</a></li>
+        <img
+          src="img/iconMenu.png"
+          alt="menu"
+          class="iconMenu"
+          onclick="bukaMenu()"
+        />
+      </ul>
+    </nav>
+    <section id="home">
+      <div class="gambar-home">
+        <img src="img/gedungPerpustakaan.png" alt="Gedung Perpustakaan" />
+        <div class="wrapper-selamatDatang">
+          <h2>PUSTIPADA</h2>
+          <p>Selamat Datang di Pusat Teknologi Informasi dan Pangkalan Data</p>
+        </div>
+      </div>
+    </section>
+    <section id="container-informasi">
+      <div class="container-informasi">
+        <div class="sistemInformasi">
+          <h3>Sistem Informasi</h3>
+          <p>
+            Taka Kelola Sistem Informasi yang ada di lingkungan UIN Sumatera
+            Utara
+          </p>
+        </div>
+        <div class="jaringanInternet">
+          <h3>Jaringan Internet</h3>
+          <p>
+            Penyediaan Jaringan Internet untuk mendukung proses pembelajaran di
+            UIN Sumatera Utara
+          </p>
+        </div>
+        <div class="pangkalanData">
+          <h3>Pangkalan Data</h3>
+          <p>
+            Penyediaan Pangkalan Data untuk mendukung proses pembelajaran di UIN
+            Sumatera Utara
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about"></section>
 
-		<div class="container-menu" onclick="tutupMenu()">
-			<menu id="menu">
-				<img
-					src="img/iconBack.png"
-					alt="back"
-					class="iconBackMenu"
-					onclick="tutupMenu()"
-				/>
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</menu>
-		</div>
-		<script>
-			function tutupMenu() {
-				let menu = document.getElementById("menu");
+    <div class="container-menu" onclick="tutupMenu()">
+      <menu id="menu">
+        <img
+          src="img/iconBack.png"
+          alt="back"
+          class="iconBackMenu"
+          onclick="tutupMenu()"
+        />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Struktur Organisasi</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </menu>
+    </div>
+    <script>
+      function tutupMenu() {
+        let menu = document.getElementById("menu");
 
-				menu.style.display = "none";
-			}
-			function bukaMenu() {
-				let menu = document.getElementById("menu");
+        menu.style.display = "none";
+      }
+      function bukaMenu() {
+        let menu = document.getElementById("menu");
 
-				menu.style.display = "block";
-			}
-		</script>
-	</body>
+        menu.style.display = "block";
+      }
+    </script>
+  </body>
 </html>

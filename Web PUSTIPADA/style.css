@@ -5,8 +5,6 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
 }
 nav {
   position: sticky;
@@ -23,9 +21,10 @@ nav {
 
 .logo {
   max-height: 10vh;
+  margin-left: 1rem;
 }
 
-.container-menu{
+.container-menu {
   position: absolute;
   display: flex;
   justify-content: flex-end;
@@ -39,7 +38,7 @@ nav {
   display: flex;
   gap: 10px;
   list-style: none;
-  margin: 0;
+  margin-right: 1rem;
   padding: 0;
   margin: 0 10px;
 }
@@ -50,7 +49,7 @@ nav {
   padding: 5px;
   text-align: center;
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .gambar-home {
   position: relative;
@@ -111,11 +110,72 @@ menu a {
   width: 1.9rem;
 }
 
-@media (max-width: 600px) {
+.container-informasi {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.container-informasi div {
+  text-align: center;
+  width: 15rem;
+  height: 7rem;
+}
+
+.container-informasi p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background-color: #078cf286;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.container-informasi h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 1px 1px 8px #0456a0, 0 2px 8px #0456a0;
+}
+
+.sistemInformasi {
+  background-image: url("img/sistemInformasi.jpg");
+  background-position: center;
+  padding: 1rem;
+  width: 40vw;
+}
+
+.jaringanInternet {
+  background-image: url("img/jaringanInternet.jpg");
+  background-position: center;
+  padding: 1rem;
+  width: 40vw;
+}
+
+.pangkalanData {
+  background-image: url("img/pangkalanData.jpg");
+  background-position: center;
+  padding: 1rem;
+  width: 40vw;
+}
+
+@media (max-width: 800px) {
   .menu a {
     display: none;
   }
   .iconMenu {
     display: block;
+  }
+  .container-informasi {
+    position: static;
+    flex-direction: column;
+    transform: translate(0);
+    padding-top: 1rem;
   }
 }
