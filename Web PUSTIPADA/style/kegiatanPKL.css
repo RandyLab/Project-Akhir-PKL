@@ -177,15 +177,40 @@ menu a {
   padding: 2rem;
 }
 
-.kegiatan-wrapper img{
-  height: 400px;
+.kegiatan-wrapper h3{
+  background-color: hsl(138, 76.5%, 96.7%);
+  color: hsl(142, 70.6%, 45.3%);
+  width: max-content;
+  border-radius: 10px;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  margin: 1rem;
+  max-width: 100%;
 }
+
 .kegiatan-wrapper p{
   margin-top: 10px;
   background-color: hsl(138, 76.5%, 96.7%);
   color: hsl(142, 76.2%, 36.3%);
   padding: 1rem;
-  border-radius: 5%;
+  border-radius: 5px;
+}
+
+.media-kegiatan img, .media-kegiatan video{
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px hsl(240, 3.7%, 15.9%);
+} 
+
+.media-kegiatan{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: hsl(226, 100%, 96.7%);
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -217,7 +242,11 @@ footer {
   .kegiatan{
     width: 100vw !important;
   }
-  .kegiatan-wrapper img{
+  .kegiatan-wrapper h3{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .media-kegiatan img, .media-kegiatan video{
     max-width: 100%;
   }
 }
