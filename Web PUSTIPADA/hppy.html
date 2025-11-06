@@ -1,195 +1,308 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galeri Kegiatan di Luar Jam Kerja</title>
-    <link rel="stylesheet" href="twohppy.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="style/twohppy.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <h1>🎉 Galeri Kegiatan di Luar Jam Kerja 🎉</h1>
-        <p class="lead">Foto dan video dari kegiatan santai, outing, atau penugasan non-formal. Klik thumbnail untuk melihat lebih besar atau memutar video!</p>
+      <h1>🎉 Galeri Kegiatan di Luar Jam Kerja 🎉</h1>
+      <p class="lead">
+        Foto dan video dari kegiatan santai, outing, atau penugasan non-formal.
+        Klik thumbnail untuk melihat lebih besar atau memutar video!
+      </p>
     </header>
 
     <section class="controls">
-        <div class="filters" role="tablist" aria-label="Filter media">
-            <button class="filter-btn active" data-filter="all">📸 Semua</button>
-            <button class="filter-btn" data-filter="photo">🖼️ Foto</button>
-            <button class="filter-btn" data-filter="video">🎥 Video</button>
-        </div>
+      <div class="filters" role="tablist" aria-label="Filter media">
+        <button class="filter-btn active" data-filter="all">📸 Semua</button>
+        <button class="filter-btn" data-filter="photo">🖼️ Foto</button>
+        <button class="filter-btn" data-filter="video">🎥 Video</button>
+      </div>
     </section>
 
     <main class="gallery" id="gallery">
-       
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=1200&q=80&auto=format&fit=crop" alt="Tim sedang duduk santai" loading="lazy">
-            <div class="meta">
-                <h3>Ngumpul Tim</h3>
-                <p class="date">12 Sep 2024 — Jalan-jalan sore</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1503264116251-35a269479413?w=1200&q=80&auto=format&fit=crop"
+          alt="Tim sedang duduk santai"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Ngumpul Tim</h3>
+          <p class="date">12 Sep 2024 — Jalan-jalan sore</p>
+        </div>
+      </article>
 
-       
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop" alt="Momen foto bersama" loading="lazy">
-            <div class="meta">
-                <h3>Foto Bersama</h3>
-                <p class="date">05 Okt 2024 — Outing kantor</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop"
+          alt="Momen foto bersama"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Foto Bersama</h3>
+          <p class="date">05 Okt 2024 — Outing kantor</p>
+        </div>
+      </article>
 
-        <article class="item" data-type="video" data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" tabindex="0">
-            <video muted autoplay loop playsinline poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" loading="lazy">
-                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-            <div class="meta">
-                <h3>Highlight Video</h3>
-                <p class="date">20 Nov 2024 — Short highlights</p>
-            </div>
-        </article>
+      <article
+        class="item"
+        data-type="video"
+        data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+        tabindex="0"
+      >
+        <video
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+          loading="lazy"
+        >
+          <source
+            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="meta">
+          <h3>Highlight Video</h3>
+          <p class="date">20 Nov 2024 — Short highlights</p>
+        </div>
+      </article>
 
-       
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?w=1200&q=80&auto=format&fit=crop" alt="Berbincang di taman" loading="lazy">
-            <div class="meta">
-                <h3>Bincang Santai</h3>
-                <p class="date">02 Agu 2024 — Kopi bareng</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1470104240373-bc1812eddc9f?w=1200&q=80&auto=format&fit=crop"
+          alt="Berbincang di taman"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Bincang Santai</h3>
+          <p class="date">02 Agu 2024 — Kopi bareng</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="video" data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" tabindex="0">
-            <video muted autoplay loop playsinline poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail" loading="lazy">
-                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-            <div class="meta">
-                <h3>Video Kegiatan</h3>
-                <p class="date">15 Jul 2024 — Activities recap</p>
-            </div>
-        </article>
+      <article
+        class="item"
+        data-type="video"
+        data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+        tabindex="0"
+      >
+        <video
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail"
+          loading="lazy"
+        >
+          <source
+            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="meta">
+          <h3>Video Kegiatan</h3>
+          <p class="date">15 Jul 2024 — Activities recap</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80&auto=format&fit=crop" alt="Diskusi tim di ruangan" loading="lazy">
-            <div class="meta">
-                <h3>Diskusi Tim</h3>
-                <p class="date">10 Jan 2024 — Meeting santai</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=80&auto=format&fit=crop"
+          alt="Diskusi tim di ruangan"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Diskusi Tim</h3>
+          <p class="date">10 Jan 2024 — Meeting santai</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="video" data-video-src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4" tabindex="0">
-            <video muted autoplay loop playsinline poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+2" loading="lazy">
-                <source src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-            <div class="meta">
-                <h3>Video Outing</h3>
-                <p class="date">25 Feb 2024 — Hiking trip</p>
-            </div>
-        </article>
+      <article
+        class="item"
+        data-type="video"
+        data-video-src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4"
+        tabindex="0"
+      >
+        <video
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+2"
+          loading="lazy"
+        >
+          <source
+            src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="meta">
+          <h3>Video Outing</h3>
+          <p class="date">25 Feb 2024 — Hiking trip</p>
+        </div>
+      </article>
 
-       
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&auto=format&fit=crop" alt="Makan bersama di restoran" loading="lazy">
-            <div class="meta">
-                <h3>Makan Bersama</h3>
-                <p class="date">14 Mar 2024 — Dinner outing</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&q=80&auto=format&fit=crop"
+          alt="Makan bersama di restoran"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Makan Bersama</h3>
+          <p class="date">14 Mar 2024 — Dinner outing</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&auto=format&fit=crop" alt="Jalan-jalan di pantai" loading="lazy">
-            <div class="meta">
-                <h3>Jalan-jalan Pantai</h3>
-                <p class="date">05 Apr 2024 — Beach day</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&auto=format&fit=crop"
+          alt="Jalan-jalan di pantai"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Jalan-jalan Pantai</h3>
+          <p class="date">05 Apr 2024 — Beach day</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="video" data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" tabindex="0">
-            <video muted autoplay loop playsinline poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+3" loading="lazy">
-                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-            <div class="meta">
-                <h3>Video Santai</h3>
-                <p class="date">18 Mei 2024 — Chill moments</p>
-            </div>
-        </article>
+      <article
+        class="item"
+        data-type="video"
+        data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+        tabindex="0"
+      >
+        <video
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+3"
+          loading="lazy"
+        >
+          <source
+            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="meta">
+          <h3>Video Santai</h3>
+          <p class="date">18 Mei 2024 — Chill moments</p>
+        </div>
+      </article>
 
-       
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=80&auto=format&fit=crop" alt="Bermain game di kantor" loading="lazy">
-            <div class="meta">
-                <h3>Game Night</h3>
-                <p class="date">22 Jun 2024 — Fun games</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=80&auto=format&fit=crop"
+          alt="Bermain game di kantor"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Game Night</h3>
+          <p class="date">22 Jun 2024 — Fun games</p>
+        </div>
+      </article>
 
-       
-        <article class="item" data-type="video" data-video-src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4" tabindex="0">
-            <video muted autoplay loop playsinline poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+4" loading="lazy">
-                <source src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-            <div class="meta">
-                <h3>Video Rekreasi</h3>
-                <p class="date">30 Jul 2024 — Team recreation</p>
-            </div>
-        </article>
+      <article
+        class="item"
+        data-type="video"
+        data-video-src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4"
+        tabindex="0"
+      >
+        <video
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+4"
+          loading="lazy"
+        >
+          <source
+            src="https://sample-videos.com/video123/mp4/720/sample_video_720p.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="meta">
+          <h3>Video Rekreasi</h3>
+          <p class="date">30 Jul 2024 — Team recreation</p>
+        </div>
+      </article>
 
-       
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80&auto=format&fit=crop" alt="Workshop kreatif" loading="lazy">
-            <div class="meta">
-                <h3>Workshop Kreatif</h3>
-                <p class="date">12 Agu 2024 — Creative session</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80&auto=format&fit=crop"
+          alt="Workshop kreatif"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Workshop Kreatif</h3>
+          <p class="date">12 Agu 2024 — Creative session</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="photo" tabindex="0">
-            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80&auto=format&fit=crop" alt="Piknik di taman" loading="lazy">
-            <div class="meta">
-                <h3>Piknik Taman</h3>
-                <p class="date">05 Sep 2024 — Picnic day</p>
-            </div>
-        </article>
+      <article class="item" data-type="photo" tabindex="0">
+        <img
+          src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&q=80&auto=format&fit=crop"
+          alt="Piknik di taman"
+          loading="lazy"
+        />
+        <div class="meta">
+          <h3>Piknik Taman</h3>
+          <p class="date">05 Sep 2024 — Picnic day</p>
+        </div>
+      </article>
 
-        
-        <article class="item" data-type="video" data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" tabindex="0">
-            <video muted autoplay loop playsinline poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+5" loading="lazy">
-                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-                Browser Anda tidak mendukung video.
-            </video>
-            <div class="meta">
-                <h3>Video Akhir Tahun</h3>
-                <p class="date">20 Des 2024 — Year-end recap</p>
-            </div>
-        </article>
+      <article
+        class="item"
+        data-type="video"
+        data-video-src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+        tabindex="0"
+      >
+        <video
+          muted
+          autoplay
+          loop
+          playsinline
+          poster="https://dummyimage.com/640x360/000/fff.png&text=Video+Thumbnail+5"
+          loading="lazy"
+        >
+          <source
+            src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"
+            type="video/mp4"
+          />
+          Browser Anda tidak mendukung video.
+        </video>
+        <div class="meta">
+          <h3>Video Akhir Tahun</h3>
+          <p class="date">20 Des 2024 — Year-end recap</p>
+        </div>
+      </article>
     </main>
 
-    
     <div id="lightbox" class="lightbox" aria-hidden="true">
-        <button class="lb-close" aria-label="Tutup">✕</button>
-        <button class="lb-prev" aria-label="Sebelumnya">‹</button>
-        <div class="lb-content" role="dialog" aria-modal="true">
-            
-            <div class="lb-media"></div>
-            <div class="lb-caption"></div>
-        </div>
-        <button class="lb-next" aria-label="Berikutnya">›</button>
+      <button class="lb-close" aria-label="Tutup">✕</button>
+      <button class="lb-prev" aria-label="Sebelumnya">‹</button>
+      <div class="lb-content" role="dialog" aria-modal="true">
+        <div class="lb-media"></div>
+        <div class="lb-caption"></div>
+      </div>
+      <button class="lb-next" aria-label="Berikutnya">›</button>
     </div>
 
     <footer class="site-footer">
-        <p>Dibuat dengan ❤️ oleh Tim Kami | SMK Project 2024</p>
+      <p>Dibuat dengan JR3 oleh Tim Kami | SMK Project 2024</p>
     </footer>
 
-    <script src="threehppy.js"></script>
-</body>
+    <script src="script/threehppy.js"></script>
+  </body>
 </html>
