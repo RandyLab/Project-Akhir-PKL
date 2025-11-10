@@ -1,4 +1,4 @@
-// Basic client-side gallery: filtering, lightbox showing images/videos
+
 (function () {
     const gallery = document.getElementById('gallery');
     const items = Array.from(gallery.querySelectorAll('.item'));
@@ -8,7 +8,7 @@
     const lbCaption = lightbox.querySelector('.lb-caption');
     let currentIndex = -1;
 
-    // Fungsi untuk mendapatkan item yang terlihat (untuk navigasi lightbox)
+    
     function getVisibleItems() {
         return items.filter(it => it.style.display !== 'none');
     }
@@ -36,7 +36,7 @@
         const visibleItems = getVisibleItems();
         const it = visibleItems[index];
         if (!it) return;
-        currentIndex = items.indexOf(it); // Simpan index asli untuk navigasi
+        currentIndex = items.indexOf(it); 
         lbMedia.innerHTML = '';
         const type = it.dataset.type;
         if (type === 'photo') {
@@ -48,18 +48,18 @@
             const src = it.dataset.videoSrc;
             const vid = document.createElement('video');
             vid.controls = true;
-            vid.autoplay = true; // Autoplay di lightbox tanpa muted, jadi suara keluar
+            vid.autoplay = true; 
             vid.src = src;
             vid.style.maxWidth = '100%';
             lbMedia.appendChild(vid);
-            // Opsional: Pause video di galeri saat lightbox buka
+            
             const galleryVid = it.querySelector('video');
             if (galleryVid) galleryVid.pause();
         }
         lbCaption.textContent = it.querySelector('.meta h3').textContent + ' — ' + it.querySelector('.meta .date').textContent;
         lightbox.setAttribute('aria-hidden', 'false');
         lightbox.classList.add('open');
-        // Focus untuk aksesibilitas
+       
         lightbox.querySelector('.lb-close').focus();
     }
 
@@ -68,7 +68,7 @@
         lightbox.classList.remove('open');
         lbMedia.innerHTML = '';
         currentIndex = -1;
-        // Opsional: Resume video di galeri saat lightbox tutup
+       
         items.forEach(it => {
             const vid = it.querySelector('video');
             if (vid) vid.play();
@@ -91,7 +91,7 @@
         }
     }
 
-    // Click handlers untuk item
+    
     items.forEach((it, idx) => {
         it.addEventListener('click', () => {
             const visibleItems = getVisibleItems();
@@ -112,12 +112,12 @@
         });
     });
 
-    // Lightbox controls
+    
     lightbox.querySelector('.lb-close').addEventListener('click', closeLightbox);
     lightbox.querySelector('.lb-prev').addEventListener('click', prev);
     lightbox.querySelector('.lb-next').addEventListener('click', next);
 
-    // Keyboard navigation
+    
     document.addEventListener('keydown', (e) => {
         if (lightbox.classList.contains('open')) {
             if (e.key === 'Escape') closeLightbox();
@@ -126,6 +126,6 @@
         }
     });
 
-    // Initialize default filter
+    
     applyFilter('all');
 })();
